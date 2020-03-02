@@ -16,7 +16,7 @@ In the PH there are 300,000 employees and 33,118 of them (~10%) will retire. For
 The number of the employees that are about to retire was determined using by joining following tables: employees and dept_emp, and filtered by age and date of hire.
 
 Figure.1
-![test image size](https://github.com/tolewicz/Pewlett-Hackard-Analysis/blob/master/Figures/ERDTableA.PNGv=4&s=200){:height="100px" width="100px"}
+![](https://github.com/tolewicz/Pewlett-Hackard-Analysis/blob/master/Figures/ERDTableA.PNG| width=100)
 
 The code for determining the number of employees retirening is as follows: 
 
@@ -31,7 +31,7 @@ AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31') and de.to_date = ('9999-01
 The above code joins employee and dept_emp tables abd filters out all the employees that are not about to retire, leaving the table with retireing employees only. 
 
 Figure 2
-![](Figures/ERDTableA.PNG){:height="700px" width="400px"}
+![](Figures/ERDTableA.PNG)
 
 The filter used for extracting retired employees is:
 
