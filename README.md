@@ -23,13 +23,13 @@ Fig. 1 ERD of joined table with: Employee number, First and last name, Title, fr
 
 The code for determining the number of employees retirening is as follows: 
 
-SELECT e.emp_no, e.first_name, e.last_name, de.to_date
+'''SELECT e.emp_no, e.first_name, e.last_name, de.to_date
 --INTO retirement1
 FROM employees as e
 LEFT JOIN dept_emp as de
 ON e.emp_no = de.emp_no
 WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31')
-AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31') and de.to_date = ('9999-01-01')
+AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31') and de.to_date = ('9999-01-01')'''
 
 The above code joins employee and dept_emp tables abd filters out all the employees that are not about to retire, leaving the table with retiring employees only. 
 
