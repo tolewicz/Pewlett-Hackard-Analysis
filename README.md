@@ -16,7 +16,7 @@ In the PH there are 300,000 employees and 33,118 of them (~10%) will retire. For
 The number of the employees that are about to retire was determined using by joining following tables: employees and dept_emp, and filtered by age and date of hire.
 
 Figure.1
-![](https://github.com/tolewicz/Pewlett-Hackard-Analysis/blob/master/Figures/ERDTableA.PNG| width=100)
+![](https://github.com/tolewicz/Pewlett-Hackard-Analysis/blob/master/Figures/ERDTableA.PNG)
 
 The code for determining the number of employees retirening is as follows: 
 
@@ -28,7 +28,7 @@ ON e.emp_no = de.emp_no
 WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31') and de.to_date = ('9999-01-01')
 
-The above code joins employee and dept_emp tables abd filters out all the employees that are not about to retire, leaving the table with retireing employees only. 
+The above code joins employee and dept_emp tables abd filters out all the employees that are not about to retire, leaving the table with retiring employees only. 
 
 Figure 2
 ![](Figures/ERDTableA.PNG)
@@ -38,7 +38,7 @@ The filter used for extracting retired employees is:
 **WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31') and de.to_date = ('9999-01-01')
 
-The part one of the challenge requested to provide Employee number, First and last name, Title, from_date, to_date, for all the PH employees accross the years. The  This caused duplications of some of the positions as the employees changed their function over the years.
+The part one of the challenge requested to provide Employee number, First and last name, Title, from_date, to_date, for all the PH employees across the years. The  This caused duplications of some of the positions as the employees changed their function over the years.
 
 fig3.
 
@@ -46,7 +46,7 @@ Thus, the table was filtered to the most recent position, and provided the compl
 
 fig.4
 
-Based on that we could also determine the number or employees per job function. That will gives us the hihlight of high job roles that can be impacted the most by loosing personel e.g. managment, only 9 employees.
+Based on that we could also determine the number or employees per job function. That will gives us the highlight of high job roles that can be impacted the most by loosing personnel e.g. management, only 9 employees.
 
 Fig.5
 
@@ -55,7 +55,7 @@ The last part of the program filtered the employees who are close to retire, but
 There are following key queries: 
 
 SELECT * FROM retiremetn2_cln - list of employees that are retire
-SELECT * FROM title_salaries_cln - list of all employess with current job function and salary
+SELECT * FROM title_salaries_cln - list of all employees with current job function and salary
 SELECT * FROM replacement_cln - list of employees ready to mentor
 
 
