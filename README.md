@@ -17,8 +17,8 @@ The number of the employees that are about to retire was determined using by joi
 
 Figure.1
 
+<img src="https://github.com/tolewicz/Pewlett-Hackard-Analysis/blob/master/Figures/ERDTableB.PNG" width="450">
 
-<img src="https://github.com/tolewicz/Pewlett-Hackard-Analysis/blob/master/Figures/ERDTableA.PNG" width="450">
 
 The code for determining the number of employees retirening is as follows: 
 
@@ -33,7 +33,8 @@ AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31') and de.to_date = ('9999-01
 The above code joins employee and dept_emp tables abd filters out all the employees that are not about to retire, leaving the table with retiring employees only. 
 
 Figure 2
-![](Figures/ERDTableA.PNG)
+
+<img src="https://github.com/tolewicz/Pewlett-Hackard-Analysis/blob/master/Figures/ERDTableA.PNG" width="450">
 
 The filter used for extracting retired employees is:
 
@@ -42,7 +43,9 @@ AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31') and de.to_date = ('9999-01
 
 The part one of the challenge requested to provide Employee number, First and last name, Title, from_date, to_date, for all the PH employees across the years. The  This caused duplications of some of the positions as the employees changed their function over the years.
 
-fig3.
+Fig3.
+
+<img src="https://github.com/tolewicz/Pewlett-Hackard-Analysis/blob/master/Figures/DoubleTitle.PNG" width="450">
 
 Thus, the table was filtered to the most recent position, and provided the complete roster of employees in the organization with their most recent job function and w/o duplications.
 
