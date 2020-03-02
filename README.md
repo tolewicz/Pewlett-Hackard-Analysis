@@ -35,7 +35,9 @@ The above code joins employee and dept_emp tables abd filters out all the employ
 
 Figure 2
 
+<p align="center">
 <img src="https://github.com/tolewicz/Pewlett-Hackard-Analysis/blob/master/Figures/ERDTableA.PNG" width="450">
+</p>
 
 The filter used for extracting retired employees is:
 
@@ -46,11 +48,17 @@ The part one of the challenge requested to provide Employee number, First and la
 
 Fig3.
 
+<p align="center">
 <img src="https://github.com/tolewicz/Pewlett-Hackard-Analysis/blob/master/Figures/DoubleTitle.PNG" width="450">
+</p>
 
 Thus, the table was filtered to the most recent position, and provided the complete roster of employees in the organization with their most recent job function and w/o duplications.
 
 fig.4
+
+<p align="center">
+<img src="https://github.com/tolewicz/Pewlett-Hackard-Analysis/blob/master/Figures/SingleTitle.PNG" width="450">
+</p>
 
 Based on that we could also determine the number or employees per job function. That will gives us the highlight of high job roles that can be impacted the most by loosing personnel e.g. management, only 9 employees.
 
