@@ -18,7 +18,7 @@ The number of the employees that are about to retire was determined using by joi
 Figure.1
 
 
-<img src="https://github.com/tolewicz/Pewlett-Hackard-Analysis/blob/master/Figures/ERDTableA.PNG" width="150">
+<img src="https://github.com/tolewicz/Pewlett-Hackard-Analysis/blob/master/Figures/ERDTableA.PNG" width="450">
 
 The code for determining the number of employees retirening is as follows: 
 
