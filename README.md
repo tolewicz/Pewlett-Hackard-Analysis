@@ -16,7 +16,7 @@ In the PH there are 300,000 employees and 33,118 of them (~10%) will retire. For
 The number of the employees that are about to retire was determined using by joining following tables: employees and dept_emp, and filtered by age and date of hire.
 
 Figure.1
-![](/Figures/ERD%20Table%201.PNG&s=200?v=4&s=200)
+![](https://github.com/tolewicz/Pewlett-Hackard-Analysis/blob/master/Figures/ERDTableA.PNG)
 
 
 The code for determining the number of employees retirening is as follows: 
