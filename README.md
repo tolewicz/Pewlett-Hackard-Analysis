@@ -35,11 +35,13 @@ AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31') and de.to_date = ('9999-01
 
 The above code joins employee and dept_emp tables abd filters out all the employees that are not about to retire, leaving the table with retiring employees only. 
 
-Fig. 2
+
 
 <p align="center">
 <img src="https://github.com/tolewicz/Pewlett-Hackard-Analysis/blob/master/Figures/ERDTableA.PNG" width="450">
 </p>
+
+Fig. 2. ERD for data basis of retired employees 
 
 The filter used for extracting retired employees is:
 
@@ -48,27 +50,28 @@ AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31') and de.to_date = ('9999-01
 
 The part one of the challenge requested to provide Employee number, First and last name, Title, from_date, to_date, for all the PH employees across the years. This caused duplications of some of the positions as the employees changed their function over the years.
 
-Fig. 3
-
 <p align="center">
 <img src="https://github.com/tolewicz/Pewlett-Hackard-Analysis/blob/master/Figures/DoubleTitle.PNG" width="450">
 </p>
 
-Thus, the table was filtered to the most recent position, and provided the complete roster of employees in the organization with their most recent job function and w/o duplications.
+Fig. 3. Multiple records of the same employee changing job title within PH
 
-Fig. 4
+Thus, the table was filtered to the most recent position, and provided the complete roster of employees in the organization with their most recent job function and w/o duplications.
 
 <p align="center">
 <img src="https://github.com/tolewicz/Pewlett-Hackard-Analysis/blob/master/Figures/SingleTitle.PNG" width="450">
 </p>
 
+Fig. 4. Post filtered table the most recent title
+
 Based on that we could also determine the number or employees per job function. That will gives us the highlight of high job roles that can be impacted the most by loosing personnel e.g. management, only 9 employees.
 
-Fig. 5
+
 <p align="center">
 <img src="https://github.com/tolewicz/Pewlett-Hackard-Analysis/blob/master/Figures/Hedcount_per_title.PNG" width="450">
 </p>
 
+Fig. 5. Head count per job position
 
 The last part of the program filtered the employees who are close to retire, but are still within organization. Those employees were born in 1965 and were hired between 1985 and 1988. Unfortunately the number of those employees is 550 which means PH will need to introduce global training program instead of mentoring approach.
 
