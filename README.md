@@ -23,7 +23,7 @@ Fig. 1 ERD of joined table with: Employee number, First and last name, Title, fr
 
 The code for determining the number of employees retirening is as follows: 
 
-'''SELECT e.emp_no, e.first_name, e.last_name, de.to_date
+'''ruby SELECT e.emp_no, e.first_name, e.last_name, de.to_date
 --INTO retirement1
 FROM employees as e
 LEFT JOIN dept_emp as de
