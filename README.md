@@ -32,7 +32,7 @@ AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31') and de.to_date = ('9999-01
 The above code joins employee and dept_emp tables abd filters out all the employees that are not about to retire, leaving the table with retireing employees only. 
 
 Figure 2
-![](Figures/ERDTableA.PNG =250x250)
+![](Figures/ERDTableA.PNG){:height="700px" width="400px"}
 
 The filter used for extracting retired employees is:
 
