@@ -2,7 +2,7 @@
 Creating and managing Data Basis
 
 ## Project Overview
-Create data basis that will help to image the number of people who will retire from PH and adjust the rester for mentor training
+Create data basis that will help to image the number of people who will retire from PH and adjust the roster for mentor training
 
 ## Resources
 -	Imput excell sheets with emplyees data
@@ -11,7 +11,7 @@ Create data basis that will help to image the number of people who will retire f
 
 # Mentor Program Challenge
 
-In the PH there are 300,000 employees and 33,118 of them (~10%) will retire. For that PH had to accomodate a trasition program where non retired, experienced employees woudl train new hires. To do that we need to know how many employees retired, how many employees are experienced i.e. close to retire but still within organization. 
+In the PH there are 300,000 employees and 33,118 of them (~10%) will retire. PH had is planning to launch a transition program where non retired, experienced employees would train new hires. To do that we need to know how many employees retired, how many employees are experienced i.e. close to retire but still within organization. 
 
 The number of the employees that are about to retire was determined using by joining following tables: employees and dept_emp, and filtered by age and date of hire.
 
@@ -21,7 +21,7 @@ The number of the employees that are about to retire was determined using by joi
 
 Fig. 1 ERD of joined table with: Employee number, First and last name, Title, from_date, Salary
 
-The code for determining the number of employees retirening is as follows: 
+The code for determining the number of employees retiring is as follows: 
 
 '''
 SELECT e.emp_no, e.first_name, e.last_name, de.to_date
@@ -46,7 +46,7 @@ The filter used for extracting retired employees is:
 '''WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31') and de.to_date = ('9999-01-01')'''
 
-The part one of the challenge requested to provide Employee number, First and last name, Title, from_date, to_date, for all the PH employees across the years. The  This caused duplications of some of the positions as the employees changed their function over the years.
+The part one of the challenge requested to provide Employee number, First and last name, Title, from_date, to_date, for all the PH employees across the years. This caused duplications of some of the positions as the employees changed their function over the years.
 
 Fig. 3
 
